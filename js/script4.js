@@ -2,27 +2,21 @@
 // Aggiungi elementi casuali all’array che ha meno elementi,
 // fino a quando ne avrà tanti quanti l’altro.
 
-//* INITIAL VARIABLES
+//*INITIAL VARIABLES
+var arrayUno = [2, 5, 6, 7, 90];
+var arrayDue = [3, 4];
 
-var arrayUno = [2,3,6,8,20,50];
-var arrayDue = [4, 7, 12];
-var arrayTre = [];
+//* VERIFICA
 
-console.log('Primo Array: ' + arrayUno);
-console.log('Secondo Array: ' + arrayDue);
+while(arrayUno.length !== arrayDue.length){
+    var randomNumb = Math.floor(Math.random()* 100) + 1;
+}
 
+if (arrayUno.length > arrayDue.length){
+    arrayDue.push(randomNumb);
+    arrayUno.push(randomNumb);
+}
 
-//* CONCATENAZIONE ARRAY UNO E DUE
-
-var result = arrayUno.concat(arrayDue);
-
-console.log(result);
-
-//aggiungiamo il result nel terzo array
-arrayTre.push(result);
-
-console.log('Terzo Array: ' + arrayTre);
-
-//* PRINTO ON PAGE
-
-document.getElementById('snack4').innerHTML = "Le due array unite formano questa terza array: " + arrayTre;
+console.log('Gli array hanno stessa lunghezza');
+console.log(arrayUno);
+console.log(arrayDue);
