@@ -10,13 +10,19 @@ var arrayDue = [3, 4];
 
 while(arrayUno.length !== arrayDue.length){
     var randomNumb = Math.floor(Math.random()* 100) + 1;
+    
+    if (arrayUno.length > arrayDue.length){
+        arrayDue.push(randomNumb);   
+    } else {
+        arrayUno.push(randomNumb);
+    }
 }
 
-if (arrayUno.length > arrayDue.length){
-    arrayDue.push(randomNumb);
-    arrayUno.push(randomNumb);
-}
+
 
 console.log('Gli array hanno stessa lunghezza');
 console.log(arrayUno);
 console.log(arrayDue);
+
+document.getElementById('snack4').innerHTML = 'Primo Array: ' + arrayUno;
+document.getElementById('snack4bis').innerHTML = 'Secondo Array: ' + arrayDue;
