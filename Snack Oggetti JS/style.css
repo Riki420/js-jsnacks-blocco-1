@@ -49,12 +49,11 @@ th,td{
 
 /*! SNACK 1 */
 .snack1{
-    width: 150px;
+    width: 350px;
     border: 1px solid black;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     height: 150px;
-    text-align: center;
     padding: 22px;
     margin: 0 auto;
     background-color: #dfdfdfaa;
@@ -88,4 +87,34 @@ th,td{
 
     margin: 0 auto;
     text-align: center;
+}
+
+
+/* !TABELLA SQUADER */
+th{
+    background-color: #ca6565;
+    color: #fff;
+}
+
+tr:nth-child(1){
+    background-color: #f3faf4;
+}
+tr:nth-child(2){
+    background-color: #f3faf4;
+}
+tr:nth-child(3){
+    background-color: #f3faf4;
+}
+tr:nth-child(4){
+    background-color: #f3faf4;
+}
+tr:nth-child(5){
+    background-color: #faf1fd;
+}
+tr:nth-child(6){
+    background-color: #fff6f1;
+}
+
+tr:last-child{
+    background-color: #ca6565;
 }

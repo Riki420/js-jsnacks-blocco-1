@@ -10,27 +10,32 @@ var teamList = [
     {
         team: 'As Roma',
         citta: 'Roma',
-        punti: 69
+        punti: 72
+        
     },
     {
         team: 'Pescara FC',
         citta: 'Pescara',
         punti: 32
+        
     },
     {
         team: 'Juventus',
         citta: 'Torino',
         punti: 60
+        
     },
     {
         team: 'Milan',
         citta: 'Milano',
         punti: 40
+        
     },
     {
         team: 'Inter',
         citta: 'Milano',
         punti: 32
+        
     },
     {
         team: 'Lazio',
@@ -56,8 +61,37 @@ var teamList = [
         team: 'Napoli',
         citta: 'Napoli',
         punti: 10
-    }
-
+    },
+    {
+        team: 'Brescia',
+        citta: 'Brescia',
+        punti: 5
+    },
+    {
+        team: 'Sampdoria',
+        citta: 'Genova',
+        punti: 23
+    },
+    {
+        team: 'Atalanta',
+        citta: 'Bergamo',
+        punti: 55
+    },
+    {
+        team: 'Fiorentina',
+        citta: 'Firenze',
+        punti: 22
+    },
+    {
+        team: 'Sassuolo',
+        citta: 'Sassuolo',
+        punti: 43
+    },
+    {
+        team: 'Hellas Verona',
+        citta: 'Verona',
+        punti: 22
+    },
 ];
 
 teamList.sort(function(a,b){
@@ -74,6 +108,7 @@ for(var i = 0; i < teamList.length; i++){
     tableContent += '<td>' + currentTeam.team + '</td>'
     tableContent += '<td>' + currentTeam.punti + '</td>'
     tableContent += '<td>' + currentTeam.citta + '</td>'
+
 
     tableContent += '</tr>'
 }

@@ -20,7 +20,9 @@ var nameField = document.getElementById('name');
 var button = document.getElementById('btn');
 
 button.addEventListener('click', function () {
-    
+    nameValue = nameField.value;
+    palla.nome = nameValue;
+
     //recupero dei valori
     var weightValue = weightField.value;
     console.log(weightValue);
